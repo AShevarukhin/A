@@ -1,2 +1,9 @@
-a,b= map(int,input().split())
-print(a*b, a+b+a+b) 
+# Ввод сторон прямоугольника
+lenght = float(input('Введите длину прямоугольника:'))
+width = float(input('Введите ширину прямоугольника:'))
+# Вычесление площади и периметра
+area = lenght*width
+perimetr = 2*(lenght+width)
+# Вывод результата
+print("Площадь прямоугольника:", area)
+print("Периметр прямоугольника:", perimetr)
