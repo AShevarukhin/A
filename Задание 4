@@ -1,2 +1,12 @@
-35427
-print(2**7*4//(3-5))
+# Ввод пятизначного целого числа
+number = int(input("Введите пятизначное целое число: "))
+# Разбиение числа на разряды
+units = number % 10
+tens = (number // 10) % 10
+hundreds = (number // 100) % 10
+thousands = (number // 1000) % 10
+ten_thousands = (number // 10000) % 10
+# Вычисление результата по формуле
+result = (tens ** units) * (2 * hundreds) / (ten_thousands - thousands)
+# Вывод результата
+print(result)
